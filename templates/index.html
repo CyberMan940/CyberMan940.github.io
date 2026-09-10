@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CYBERMAN // Digital Operations</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Background effects -->
+    <div class="grid"></div>
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">
+            <span>&gt;_</span> CYBERMAN
+        </div>
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#request">BUILD REQUEST</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="terminal-line">
+                <span class="green">root@cyberman</span>
+                <span>:</span>
+                <span class="purple">~</span>
+                <span>$ ./initialize_cyberman</span>
+            </div>
+
+            <div class="hero-content">
+
+                <div class="hero-text">
+
+                    <p class="small-label">DIGITAL OPERATIONS // 001</p>
+
+                    <h1>
+                        WELCOME TO
+                        <span>CYBERMAN</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm a college student pursuing cybersecurity and AI.
+                        I'm using this space to learn, build projects,
+                        experiment with ideas, and turn concepts into reality.
+                    </p>
+
+                    <div class="buttons">
+                        <a href="#projects" class="button primary">
+                            VIEW MY WORK
+                        </a>
+
+                        <a href="#request" class="button secondary">
+                            GIVE ME AN IDEA
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Fake terminal -->
+                <div class="terminal">
+
+                    <div class="terminal-header">
+                        <span class="terminal-title">cyberman_terminal</span>
+
+                        <div class="terminal-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <p>
+                            <span class="green">root@cyberman</span>:~$
+                            whoami
+                        </p>
+
+                        <p class="terminal-output">
+                            cybersecurity_student
+                        </p>
+
+                        <p>
+                            <span class="green">root@cyberman</span>:~$
+                            current_status
+                        </p>
+
+                        <p class="terminal-output">
+                            learning...
+                        </p>
+
+                        <p>
+                            <span class="green">root@cyberman</span>:~$
+                            mission
+                        </p>
+
+                        <p class="terminal-output">
+                            BUILD SOMETHING COOL
+                        </p>
+
+                        <p>
+                            <span class="green">root@cyberman</span>:~$
+                            <span class="cursor">█</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                SCROLL TO EXPLORE
+                <span>↓</span>
+            </div>
+
+        </section>
+
+
+        <!-- Stats -->
+        <section class="stats">
+
+            <div class="stat">
+                <span class="stat-number">01</span>
+                <span class="stat-label">MISSION</span>
+                <p>Learn cybersecurity through building.</p>
+            </div>
+
+            <div class="stat">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">IDEAS</span>
+                <p>Always looking for something new to create.</p>
+            </div>
+
+            <div class="stat">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">BUILD MODE</span>
+                <p>Learning by actually doing.</p>
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="small-label">DATABASE // PROJECTS</p>
+
+                    <h2>MY <span>WORK</span></h2>
+                </div>
+
+                <p class="section-number">/ 001</p>
+
+            </div>
+
+            <p class="section-intro">
+                This is where I'll document the things I build,
+                the things I'm learning, and the problems I'm trying to solve.
+            </p>
+
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <span class="project-id">PROJECT_001</span>
+                        <span class="project-status">IN DEVELOPMENT</span>
+                    </div>
+
+                    <div class="project-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>PYTHON SECURITY TOOLS</h3>
+
+                    <p>
+                        Building custom cybersecurity tools with Python
+                        to learn how vulnerabilities, scanning, and
+                        security systems work.
+                    </p>
+
+                    <div class="tags">
+                        <span>PYTHON</span>
+                        <span>CYBERSECURITY</span>
+                        <span>AI</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        ACCESS PROJECT →
+                    </a>
+
+                </article>
+
+
+                <!-- Project 2 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <span class="project-id">PROJECT_002</span>
+                        <span class="project-status">ACTIVE</span>
+                    </div>
+
+                    <div class="project-icon">
+                        { }
+                    </div>
+
+                    <h3>A-Z DATING</h3>
+
+                    <p>
+                        A web application designed to help people
+                        create personalized date ideas based on
+                        location, budget, time, and vibe.
+                    </p>
+
+                    <div class="tags">
+                        <span>WEB</span>
+                        <span>PYTHON</span>
+                        <span>JAVASCRIPT</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        ACCESS PROJECT →
+                    </a>
+
+                </article>
+
+
+                <!-- Project 3 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <span class="project-id">PROJECT_003</span>
+                        <span class="project-status">PLANNING</span>
+                    </div>
+
+                    <div class="project-icon">
+                        &lt;_&gt;
+                    </div>
+
+                    <h3>CLASSIFIED</h3>
+
+                    <p>
+                        Something new is being planned.
+                        Check back soon to see what enters
+                        the CyberMan system next.
+                    </p>
+
+                    <div class="tags">
+                        <span>UNKNOWN</span>
+                        <span>CLASSIFIED</span>
+                    </div>
+
+                    <a href="#request" class="project-link">
+                        SUBMIT AN IDEA →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Currently Building -->
+        <section class="building">
+
+            <div class="building-box">
+
+                <div class="building-header">
+
+                    <div>
+                        <p class="small-label">LIVE SYSTEM</p>
+                        <h2>CURRENTLY <span>BUILDING</span></h2>
+                    </div>
+
+                    <div class="live">
+                        <span></span>
+                        LIVE
+                    </div>
+
+                </div>
+
+                <div class="progress-info">
+                    <span>SYSTEM DEVELOPMENT</span>
+                    <span>██████░░░░ 60%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div></div>
+                </div>
+
+                <p>
+                    New projects, experiments, and cybersecurity
+                    challenges will appear here as I build them.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="section about">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="small-label">SYSTEM PROFILE</p>
+                    <h2>ABOUT <span>CYBERMAN</span></h2>
+                </div>
+
+                <p class="section-number">/ 002</p>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        Hello there. My name is CyberMan.
+                    </p>
+
+                    <p>
+                        I'm a college student pursuing cybersecurity
+                        and AI. I'm still learning, but instead of
+                        just learning from textbooks and classes,
+                        I want to actually build things.
+                    </p>
+
+                    <p>
+                        CyberMan is my place to experiment, document
+                        my projects, challenge myself, and hopefully
+                        create things that other people find useful.
+                    </p>
+
+                </div>
+
+                <div class="profile-terminal">
+
+                    <p>
+                        <span class="green">USER</span>
+                        CYBERMAN
+                    </p>
+
+                    <p>
+                        <span class="green">FIELD</span>
+                        CYBERSECURITY
+                    </p>
+
+                    <p>
+                        <span class="green">STATUS</span>
+                        LEARNING + BUILDING
+                    </p>
+                    <p>
+                        <span class="green">OBJECTIVE</span>
+                        BUILD NEW PROJECTS, LEARN, EXPERIMENT, GET A JOB
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Build Request -->
+        <section id="request" class="request-section">
+
+            <div class="request-content">
+
+                <p class="small-label">INCOMING TRANSMISSION</p>
+
+                <h2>
+                    GOT AN <span>IDEA?</span>
+                </h2>
+
+                <p>
+                    Tell me something you want built.
+                    I'll see if I can make it happen.
+                </p>
+
+                <form action="{{ url_for('submit_request') }}" method="POST">
+
+                    <label for="idea">YOUR IDEA</label>
+
+                    <input
+                        type="text"
+                        id="idea"
+                        name="idea"
+                        placeholder="What should I build?"
+                        required
+                    >
+
+                    <label for="description">WHAT SHOULD IT DO?</label>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        placeholder="Describe your idea..."
+                    ></textarea>
+
+                    <button type="submit" class="button primary">
+                        SEND REQUEST →
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            &gt;_ CYBERMAN
+        </div>
+
+        <p>
+            BUILD. LEARN. BREAK. FIX. REPEAT.
+        </p>
+
+        <div class="footer-links">
+            <a href="https://github.com/CyberMan940" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            <a href="https://www.instagram.com/cyberman940" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+        </div>
+
+        <div class="footer-bottom">
+            CYBERMAN // SYSTEM ONLINE // 2026
+        </div>
+
+    </footer>
+
+</body>
+</html>
