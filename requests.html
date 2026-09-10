@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Requests // CYBERMAN</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="grid"></div>
+    <div class="scanlines"></div>
+
+    <header>
+        <div class="logo"><span>&gt;_</span> CYBERMAN</div>
+        <div class="system-status"><span class="status-dot"></span>SYSTEM ONLINE</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="requests.html">REQUESTS</a>
+        </nav>
+    </header>
+
+    <main class="requests-page">
+        <section class="requests-header">
+            <div>
+                <h1>BUILD <span>REQUESTS</span></h1>
+                <p class="intro">Ideas saved in this browser.</p>
+            </div>
+            <div class="database-status">
+                <div class="status-line"><span>DATABASE</span><strong>LOCAL</strong></div>
+                <div class="status-line"><span>REQUESTS</span><strong id="github-request-count">0</strong></div>
+                <div class="status-line"><span>ACCESS</span><strong>GRANTED</strong></div>
+            </div>
+        </section>
+
+        <section id="github-request-list" class="request-list"></section>
+
+        <section class="submit-section">
+            <h2>GIVE ME SOMETHING <span>TO BUILD.</span></h2>
+            <p>Submit another idea.</p>
+            <a href="index.html#request" class="cyber-button">SUBMIT A REQUEST →</a>
+        </section>
+    </main>
+
+    <script src="static/site.js"></script>
+</body>
+</html>
