@@ -1,5 +1,7 @@
 const requestStorageKey = "cyberman-build-requests";
-const isGithubPages = window.location.hostname.endsWith("github.io");
+const isGithubPages = window.location.hostname.endsWith("github.io")
+    || window.location.hostname === "localhost"
+    || window.location.hostname === "127.0.0.1";
 
 function getStoredRequests() {
     try {
@@ -43,13 +45,7 @@ function setupGithubForm() {
     });
 }
 
-function setupGithubRequestsPage() {
-    const requestList = document.querySelector("#github-request-list");
-    if (!requestList || !isGithubPages) {
-        return;
-    }
-
-    const requests = getStoredRequests();
+function renderGithubRequests(requestList, requests) {
     const count = document.querySelector("#github-request-count");
     if (count) {
         count.textContent = requests.length;
@@ -66,7 +62,7 @@ function setupGithubRequestsPage() {
         card.innerHTML = `
             <div class="request-top">
                 <span class="request-number">REQUEST_${item.id}</span>
-                <span class="request-status">${item.status}</span>
+                <span class="request-status">${item.status || "RECEIVED"}</span>
             </div>
             <div class="request-content">
                 <p class="request-label">PROJECT IDEA</p>
@@ -79,9 +75,26 @@ function setupGithubRequestsPage() {
             </div>`;
         card.querySelector("h2").textContent = item.idea;
         card.querySelector(".description").textContent = item.description || "No description provided.";
-        card.querySelector(".request-footer span:last-child").textContent = item.date;
+        card.querySelector(".request-footer span:last-child").textContent = item.date || "DATE UNKNOWN";
         return card;
     }));
+}
+
+async function setupGithubRequestsPage() {
+    const requestList = document.querySelector("#github-request-list");
+    if (!requestList || !isGithubPages) {
+        return;
+    }
+
+    try {
+        const response = await fetch("requests.json", { cache: "no-store" });
+        if (!response.ok) {
+            throw new Error("Unable to load requests.json");
+        }
+        renderGithubRequests(requestList, await response.json());
+    } catch (error) {
+        renderGithubRequests(requestList, getStoredRequests());
+    }
 }
 
 function setupGithubLinks() {
