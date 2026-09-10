@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, send_file, url_for
 import json
 import os
 from datetime import datetime
@@ -23,7 +23,7 @@ def save_requests(requests):
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return send_file(os.path.join(app.root_path, "index.html"))
 
 
 @app.route("/submit-request", methods=["POST"])

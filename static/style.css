@@ -197,15 +197,6 @@ nav a:hover {
 }
 
 
-.terminal-line {
-    font-size: 13px;
-
-    color: #7d8a96;
-
-    margin-bottom: 40px;
-}
-
-
 .green {
     color: var(--green);
 }
@@ -1445,6 +1436,23 @@ footer > p {
 
 .request-footer span:last-child {
     color: #414b52;
+}
+
+
+.empty-requests {
+    grid-column: 1 / -1;
+
+    padding: 50px 30px;
+
+    color: var(--muted);
+
+    border: 1px dashed rgba(0, 255, 136, 0.2);
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    text-align: center;
 }
 
 

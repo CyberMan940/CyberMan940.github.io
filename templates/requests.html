@@ -119,7 +119,7 @@
                     </h2>
 
                     <p class="description">
-                        {{ item.description }}
+                        {{ item.description|default('No description provided.', true) }}
                     </p>
 
                 </div>
@@ -131,9 +131,7 @@
                         CYBERMAN // INCOMING
                     </span>
 
-                    <span>
-                        [ {{ item.id }} ]
-                    </span>
+                    <span>{{ item.date|default('DATE UNKNOWN', true) }}</span>
 
                 </div>
 
@@ -141,6 +139,10 @@
             </article>
 
             {% endfor %}
+
+            {% if not requests %}
+            <p class="empty-requests">NO BUILD REQUESTS RECEIVED YET.</p>
+            {% endif %}
 
         </section>
 

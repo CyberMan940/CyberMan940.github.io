@@ -7,22 +7,9 @@
     },
     {
         "id": 2,
-        "idea": "Pizza Partyyyy",
-        "description": "pizzaaa",
-        "date": "2026-09-09 21:02:39"
-    },
-    {
-        "id": 3,
-        "idea": "test 2",
-        "description": "Test",
+        "idea": "Play my music",
+        "description": "Band",
         "status": "RECEIVED",
-        "date": "2026-09-09 21:24:44"
-    },
-    {
-        "id": 4,
-        "idea": "Pizza Partyyyyy",
-        "description": "dsfdfg",
-        "status": "RECEIVED",
-        "date": "2026-09-09 21:25:51"
+        "date": "2026-09-10 08:26:21"
     }
 ]
